@@ -2,6 +2,13 @@ html {
 	background-color: rgb(00, 00, 55);
 }
 
+body {
+	width: 600px;
+	margin: 0 auto;
+	padding: 0 20px 20px 20px;
+	background-color: rgb(255, 200, 255);
+}
+
 h1 {
 	margin: 0;
 	text-align: center;
@@ -25,14 +32,29 @@ li {
 	line-height: 1.5;
 }
 
+li:hover {
+	background-color: black;
+	color: white;
+}
+
 a:hover {
 	color: blue;
 	size: 25px;
 }
 
-body {
-	width: 600px;
-	margin: 0 auto;
-	padding: 0 20px 20px 20px;
-	background-color: rgb(255, 200, 255);
+.front-image {
+	background-color: black;
 }
+
+.text-center {
+	width: 75%;
+	margin: 0 auto;
+	padding-bottom: 15px;
+	/*min-height: 150px;*/
+	max-height: 50px;
+	overflow: hidden;
+
+}
+
+
+

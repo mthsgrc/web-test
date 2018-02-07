@@ -1,6 +1,6 @@
 var myImage = document.querySelector('img');
 
-myImage.onclick = function(){
+myImage.onclick = function() {
 	var mySrc = myImage.getAttribute('src');
 	if (mySrc === 'images/sandman.jpg') {
 		myImage.setAttribute ('src','images/death.jpg');
@@ -9,12 +9,10 @@ myImage.onclick = function(){
 	}
 }
 
-
-
 var myButton = document.querySelector('button');
 var myHeading = document.querySelector('h1');
 
-function setUserName(){
+function setUserName() {
 	var myName = prompt('Please, Enter Name:');
 	localStorage.setItem('name', myName);
 	myHeading.textContent = 'Mozilla is cool, ' + myName + '!';
@@ -23,9 +21,9 @@ function setUserName(){
 if (!localStorage.getItem('name')) {
 	setUserName();
 }	else {
-	var storedName = localStorage.getItem('name');
-	myHeading.textContent = 'Mozilla is cool, ' + storedName + '!';
-}
+		var storedName = localStorage.getItem('name');
+		myHeading.textContent = 'Mozilla is cool, ' + storedName + '!';
+	}
 
 myButton.onclick = function() {
 	setUserName();
