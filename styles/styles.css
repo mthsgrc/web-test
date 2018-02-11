@@ -1,9 +1,17 @@
+* {
+	/* Box sizing set to border-box has the size of the the box fixed, not affected by the border and padding. Oposed to content-box, the default, which takes the border and padding and add to the box height and width. */
+	margin: 0;
+	padding: 0;
+}
+
 html {
 	background-color: rgb(00, 00, 55);
 }
 
 body {
-	width: 600px;
+	box-sizing: border-box; 
+	height: 100%;
+	width: 100%;
 	margin: 0 auto;
 	padding: 0 20px 20px 20px;
 	background-color: rgb(255, 200, 255);
@@ -24,12 +32,17 @@ img {
 p {
 	font-family: 'Rammetto One', cursive;
 	font-size: 12px;
+	margin: 10px 0;
 }
 
+
 li {
+	width: 50%;
+	margin: 0 auto;
 	border: 1px solid black;
 	letter-spacing: 2px;
 	line-height: 1.5;
+	text-align: center;
 }
 
 li:hover {
@@ -43,18 +56,39 @@ a:hover {
 }
 
 .front-image {
-	background-color: black;
+	display: grid;
+	grid-template-columns: 10% 1fr 10%;
+	/*margin: 0 auto;*/
+	background-image: url("../images/sandman.jpg");
+	background-repeat: no-repeat;
+	color: white;
+	font-size: 50px;
+	height: 500px;
+	width: 100%;
+	grid-column: 2;
 }
 
-.text-center {
+.title-figure {
+	grid-column: 2;
+	border: 2px solid white;
+}
+
+.container {
 	width: 75%;
+	height: 100%;
 	margin: 0 auto;
 	padding-bottom: 15px;
-	/*min-height: 150px;*/
-	max-height: 50px;
-	overflow: hidden;
-
+	margin-bottom: 15px;	
+	
+	display: grid;
+	grid-template: 1fr 1fr / 1fr 1fr;	
+	grid-column-gap: 25px;
 }
 
+.left{
+	grid-column: 1 / 3;
+	/*grid-column-start: 1;*/
+	/*grid-column-end: 3;*/
+}
 
 

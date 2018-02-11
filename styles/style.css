@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	font-family: arial;
+	line-height: 1.5em;
+	margin: 0 auto;
+}
+
+nav {
+	background-color: rgba(255,255,255,0.2);
+}
+
+nav a {
+	display: inline-block;
+	text-decoration: none;
+}
+
+header {
+	background-image: url("../images/sandman.jpg"); 
+	height: 400px;
+	width: 100%;
+	background-repeat: no-repeat;
+	align-self: flex-end;
+}
+
+.header-title {
+	background-color: rgba(0,0,0,0.5);
+	display: inline-block;
+	font-family: serif;
+	font-weight: 900;
+	font-size: 2.5em;
+	color: white;
+	position: relative;
+	padding: 10px;
+	margin-top: 300px;
+	margin-left: 50px;
+	border: 3px solid white;
+}
+
+article h1 {
+	font-size: 1em;
+	color: grey;
+	margin-left: 5%;
+}
+
+article p {
+	width: 80%;
+	margin-left: 10%;
+	margin-right: 10%;
+}
